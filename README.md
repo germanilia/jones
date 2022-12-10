@@ -5,20 +5,17 @@ The source code can be found in git repo: https://github.com/germanilia/jones
 
 ## Features
 
-* Create querries using commands <br>
-![Create querry using commands](https://github.com/germanilia/jones/blob/main/media/command_querry.gif)
+![Create querry using commands](command_querry.gif)
 
-* Create querries directly from the editor<br>
-![Create querry using commands](https://github.com/germanilia/jones/blob/main/media/inline_querry.gif)
+![Create querry using commands](inline_querry.gif)
 
-* Delete stored API key<br>
-![Delete stored API key](https://github.com/germanilia/jones/blob/main/media/delete_key.gif)
+![Delete stored API key](delete_key.gif)
 
 ## Requirements
 
 * You must be registered user to use ChatGPT api, you can complete the registratin in: https://openai.com/api/
 * On your first usage you will be required to store you api key. The key can be obtained from openai webpage.
-![API Key](https://github.com/germanilia/jones/blob/main/media/api_key.gif)
+![API Key](api_key.gif)
 
 ## Extension Settings
 
