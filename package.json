@@ -4,7 +4,7 @@
   "repository": "https://github.com/germanilia/jones",
   "publisher": "iliagerman",
   "description": "Interacts with ChatGPT to help you ingtrate code sinppets directly to you vscode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.74.0"
   },
