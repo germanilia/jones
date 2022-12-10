@@ -1,10 +1,13 @@
 {
   "name": "jones",
   "displayName": "jones",
-  "repository": "https://github.com/germanilia/jones",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/germanilia/jones"
+  },
   "publisher": "iliagerman",
   "description": "Interacts with ChatGPT to help you ingtrate code sinppets directly to you vscode",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -12,6 +15,7 @@
     "Snippets",
     "Other"
   ],
+  "license": "MIT",
   "activationEvents": [
     "*"
   ],
