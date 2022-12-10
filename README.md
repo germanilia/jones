@@ -2,6 +2,7 @@
 
 This extensions integrates with ChatGPT API and allows to get code snippets directly into vs code without using the browser.
 The source code can be found in git repo:
+https://github.com/germanilia/jones
 
 
 ## Features
