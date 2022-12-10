@@ -2,6 +2,7 @@
   "name": "jones",
   "displayName": "jones",
   "repository": "https://github.com/germanilia/jones",
+  "publisher": "iliagerman",
   "description": "Interacts with ChatGPT to help you ingtrate code sinppets directly to you vscode",
   "version": "0.0.1",
   "engines": {
