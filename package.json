@@ -1,0 +1,88 @@
+{
+  "name": "jones",
+  "displayName": "jones",
+  "description": "Interacts with ChatGPT to help you ingtrate code sinppets directly to you vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jones.changePassword",
+        "title": "Change ChatGPT Password"
+      },
+      {
+        "command": "jones.deletePassword",
+        "title": "Delete stored ChatGPT api key"
+      },
+      {
+        "command": "jones.fromSelection",
+        "title": "Generate ChatGPT querry from selection"
+      }
+    ],
+    "configuration": {
+      "title": "Jone",
+      "properties": {
+        "jones.ENABLED": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enables/Disabels the extension"
+        },
+        "jones.INLINE_QUERRY": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enables/Disabels the inline query using jones tags"
+        },
+        "jones.MAX_TOKENS": {
+          "type": "number",
+          "default": 3900,
+          "description": "The maximum number of tokens to generate in the completion.The token count of your prompt plus max_tokens cannot exceed the model's context length. Most models have a context length of 2048 tokens (except for the newest models, which support 4096)."
+        },
+        "jones.TEMRATURE": {
+          "type": "number",
+          "default": 0.7,
+          "description": "What sampling temperature to use. Higher values means the model will take more risks. Try 0.9 for more creative applications, and 0 (argmax sampling) for ones with a well-defined answer."
+        },
+        "jones.MODEL": {
+          "type": "string",
+          "default": "text-davinci-003",
+          "description": "Select which GPT model to use. The default is text-davinci-003. The other options are text-davinci-2020-05-03 and text-davinci-2020-05-03-en"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "openai": "^3.1.0",
+    "request-promise-native": "^1.0.9"
+  }
+}
